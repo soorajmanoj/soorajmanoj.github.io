@@ -1,16 +1,31 @@
  export const skillsData = [
+    'Tensorflow',
+    'Docker',
+    'Python',
+    'Java',
+    'Git',
+    'MongoDB',
+    'MySQL',
+    'PostgreSQL',
+    'Azure',
+    'AWS',
+    'Numpy',
+    'Scikit-Learn',
+    'OpenCV',
+    'Pytorch',
+    'Apache Spark',
+    'Hadoop',
+    'Keras',
+    'Tableau',
+    'C',
+    'QGIS',
     'HTML',
-    'Fastify',
-    'Blender',
-    'Figma',
     'Javascript',
     'CSS',
     'React',
-    'Django',
+    'Django'
 ]
 
-// Choose your skills from below. Make sure it's in the same format and spelled correctly.
-// Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
 
 
 // AVAILABLE SKILLS

@@ -72,6 +72,12 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
+import apachespark from '../assets/svg/skills/apache-spark.svg'
+import hadoop from '../assets/svg/skills/hadoop.svg'
+import keras from '../assets/svg/skills/keras.svg'
+import tableau from '../assets/svg/skills/tableau.svg'
+import scikitlearn from '../assets/svg/skills/scikitlearn.svg'
+import qgis from '../assets/svg/skills/qgis.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -81,6 +87,16 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
+        case 'qgis':
+            return qgis;
+        case 'hadoop':
+            return hadoop;
+        case 'scikit-learn':
+            return scikitlearn;
+        case 'keras':
+            return keras;
+        case 'tableau':
+            return tableau;
         case 'html':
             return html;
         case 'photoshop':
@@ -223,6 +239,8 @@ export const skillsImage = (skill) => {
             return sketch;
         case 'unity':
             return unity;
+        case 'apache spark':
+            return apachespark;
         case 'wolframalpha':
             return wolframalpha;
         case 'canva':
