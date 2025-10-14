@@ -78,6 +78,7 @@ import keras from '../assets/svg/skills/keras.svg'
 import tableau from '../assets/svg/skills/tableau.svg'
 import scikitlearn from '../assets/svg/skills/scikitlearn.svg'
 import qgis from '../assets/svg/skills/qgis.svg'
+import snowflake from '../assets/svg/skills/snowflake.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -87,6 +88,8 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
+        case 'snowflake':
+            return snowflake;
         case 'qgis':
             return qgis;
         case 'hadoop':

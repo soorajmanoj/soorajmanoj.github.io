@@ -79,9 +79,6 @@ function ProjectPage() {
                 <h1 style={{color: theme.secondary}}>Projects</h1>
             </div>
            <div className="projectPage-container">
-               <div className="projectPage-search">
-                   <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
-               </div>
                <div className="project-container">
                    <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
                         {filteredArticles.map(project => (

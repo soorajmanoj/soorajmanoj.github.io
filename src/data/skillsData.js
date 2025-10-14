@@ -7,6 +7,7 @@
     'MongoDB',
     'MySQL',
     'PostgreSQL',
+    'Snowflake',
     'Azure',
     'AWS',
     'Numpy',

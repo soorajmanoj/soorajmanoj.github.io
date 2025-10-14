@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a834711a-41e5-4368-834c-6af00aeeab52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/pdf/Sooraj_Kakkanatt_Manoj.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/skills/snowflake.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pdf/resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/aboutData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/aboutData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/experienceData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/experienceData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/headerData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/headerData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/skillsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/skillsData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Project/ProjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Project/ProjectPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/skillsImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/skillsImage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,28 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/soora/WebstormProjects/soorajmanoj.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/soora/WebstormProjects/soorajmanoj.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\soora\WebstormProjects\soorajmanoj.github.io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\soora\WebstormProjects\soorajmanoj.github.io\src\assets\svg\skills" />
+      <recent name="C:\Users\soora\WebstormProjects\soorajmanoj.github.io\src\assets\pdf" />
       <recent name="C:\Users\soora\WebstormProjects\soorajmanoj.github.io\src\assets\png" />
     </key>
   </component>
@@ -80,6 +87,7 @@
       <workItem from="1760077245219" duration="865000" />
       <workItem from="1760081023128" duration="8978000" />
       <workItem from="1760207327085" duration="1021000" />
+      <workItem from="1760401365982" duration="1433000" />
     </task>
     <servers />
   </component>
