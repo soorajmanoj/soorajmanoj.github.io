@@ -4,7 +4,7 @@ export const educationData = [
         institution: 'Rochester Institute of Technology',
         course: 'MS Data Science',
         startYear: '2024',
-        endYear: '2025'
+        endYear: '2026'
     },
     {
         id: 2,
