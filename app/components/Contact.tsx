@@ -10,7 +10,8 @@ export default function Contact() {
           to research collaborations and freelance work.
         </p>
         <p className="mt-2 max-w-xl text-sm text-zinc-500">
-          Authorized to work in the U.S. — no sponsorship required for several years.
+          Currently on F-1 OPT, eligible for the STEM extension — authorized to work in the U.S.
+          with no sponsorship required for up to 3 years.
         </p>
         <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium">
           <a href={`mailto:${profile.email}`} className="underline underline-offset-4">
