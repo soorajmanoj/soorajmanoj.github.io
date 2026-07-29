@@ -27,7 +27,6 @@ export default function Research() {
               <p className="mt-4 text-zinc-600 dark:text-zinc-400">{paper.abstract}</p>
               <a
                 href={paper.pdfUrl}
-                download={paper.pdfFileName}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-sm font-medium underline underline-offset-4"
