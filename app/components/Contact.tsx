@@ -6,7 +6,8 @@ export default function Contact() {
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Get in touch</h2>
         <p className="mt-4 max-w-xl text-zinc-600 dark:text-zinc-400">
-          Open to research collaborations, engineering roles, and freelance work.
+          Actively looking for full-time roles in data science and AI/ML engineering — also open
+          to research collaborations and freelance work.
         </p>
         <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium">
           <a href={`mailto:${profile.email}`} className="underline underline-offset-4">

@@ -3,9 +3,17 @@ import { profile } from "../data/content";
 export default function Hero() {
   return (
     <section className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-24 sm:py-32">
-      <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">
-        {profile.location}
-      </p>
+      <div className="flex flex-wrap items-center gap-3">
+        <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">
+          {profile.location}
+        </p>
+        {profile.openToWork && (
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-green-600/10 px-3 py-1 text-xs font-medium text-green-700 dark:bg-green-400/10 dark:text-green-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-green-600 dark:bg-green-400" />
+            Open to work
+          </span>
+        )}
+      </div>
       <h1 className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
         {profile.name}
       </h1>

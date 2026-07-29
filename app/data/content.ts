@@ -9,14 +9,15 @@ export const profile = {
   resumeUrl: "/assets/Resume.pdf",
   photoUrl: "/assets/Profile.jpg",
   tagline:
-    "I build ML pipelines, RAG systems, and data infrastructure — currently an MS Data Science student and GTA at RIT, researching bias in AI-generated content.",
+    "I build ML pipelines, RAG systems, and data infrastructure — MS in Data Science from RIT, now looking for full-time roles in data science and AI/ML engineering.",
+  openToWork: true,
 };
 
 export const about = {
   title: "Who I am",
   paragraphs: [
-    "My name's Sooraj. I'm a Data Scientist and AI/ML engineer based in Rochester, NY, finishing my MS in Data Science at RIT.",
-    "I work across the stack — from Spark/Kafka data pipelines to RAG systems and LLM evaluation research — with a focus on building things that hold up in production, not just in a notebook.",
+    "My name's Sooraj. I'm a Data Scientist and AI/ML engineer based in Rochester, NY, and a recent MS in Data Science graduate from RIT.",
+    "I work across the stack — from Spark/Kafka data pipelines to RAG systems and LLM evaluation research — with a focus on building things that hold up in production, not just in a notebook. I'm currently open to full-time opportunities.",
   ],
 };
 
