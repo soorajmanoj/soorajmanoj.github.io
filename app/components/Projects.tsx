@@ -42,14 +42,7 @@ export default function Projects() {
               key={project.id}
               className="flex flex-col gap-3 rounded-2xl border border-black/10 p-6 dark:border-white/10"
             >
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="font-semibold">{project.name}</h3>
-                {project.featured && (
-                  <span className="shrink-0 text-xs font-medium uppercase tracking-wide text-zinc-500">
-                    Featured
-                  </span>
-                )}
-              </div>
+              <h3 className="font-semibold">{project.name}</h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400">{project.description}</p>
               <div className="mt-auto flex flex-wrap gap-2 pt-2">
                 {project.tags.map((tag) => (

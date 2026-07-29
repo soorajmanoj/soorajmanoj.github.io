@@ -31,7 +31,7 @@ export default function Hero() {
           href="#research"
           className="rounded-full border border-black/15 px-5 py-2.5 transition-colors hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
         >
-          Featured Research
+          Research
         </a>
       </div>
     </section>
