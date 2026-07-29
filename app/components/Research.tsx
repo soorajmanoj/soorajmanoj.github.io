@@ -4,12 +4,7 @@ export default function Research() {
   return (
     <section id="research" className="border-t border-black/10 py-24 dark:border-white/10">
       <div className="mx-auto max-w-5xl px-6">
-        <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">
-          Research
-        </p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Papers
-        </h2>
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Research</h2>
 
         <div className="mt-10 space-y-10">
           {research.map((paper) => (

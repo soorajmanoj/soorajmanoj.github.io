@@ -14,8 +14,7 @@ export default function Projects() {
   return (
     <section id="projects" className="border-t border-black/10 py-24 dark:border-white/10">
       <div className="mx-auto max-w-5xl px-6">
-        <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">Portfolio</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Projects</h2>
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Projects</h2>
         <p className="mt-4 max-w-xl text-zinc-600 dark:text-zinc-400">
           A filterable gallery across research, data, systems, and full-stack work.
         </p>

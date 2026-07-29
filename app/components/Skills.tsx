@@ -4,8 +4,7 @@ export default function Skills() {
   return (
     <section id="skills" className="border-t border-black/10 py-24 dark:border-white/10">
       <div className="mx-auto max-w-5xl px-6">
-        <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">Toolbox</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Skills</h2>
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Skills</h2>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2">
           {Object.entries(skills).map(([category, items]) => (
