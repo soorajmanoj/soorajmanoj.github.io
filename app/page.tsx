@@ -14,10 +14,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Research />
-        <Projects />
         <Skills />
-        <Experience />
+        <Projects />
         <Education />
+        <Experience />
         <Contact />
       </main>
       <footer className="border-t border-black/10 py-8 text-center text-xs text-zinc-500 dark:border-white/10">
