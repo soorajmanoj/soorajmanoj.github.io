@@ -15,7 +15,9 @@ export default function Experience() {
                 {entry.era} · {entry.range}
               </p>
               <h3 className="mt-1 font-semibold">{entry.title}</h3>
-              <p className="text-sm text-zinc-500">{entry.org}</p>
+              <p className="text-sm text-zinc-500">
+                {entry.org} · {entry.location}
+              </p>
               <p className="mt-2 max-w-xl text-sm text-zinc-600 dark:text-zinc-400">
                 {entry.description}
               </p>
