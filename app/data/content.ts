@@ -1,7 +1,7 @@
 export const profile = {
   name: "Sooraj Kakkanatt Manoj",
   role: "Data Scientist & AI/ML Engineer",
-  location: "Rochester, NY, USA",
+  location: "United States",
   email: "soorajmanoj@gmail.com",
   phone: "+1 585 540 0455",
   github: "https://github.com/soorajmanoj",
