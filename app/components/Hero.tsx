@@ -31,10 +31,10 @@ export default function Hero() {
             Contact
           </a>
           <a
-            href="#research"
+            href="#projects"
             className="rounded-full border border-card-border px-5 py-2.5 transition-colors hover:bg-accent/10"
           >
-            Research
+            Projects
           </a>
         </div>
       </div>
