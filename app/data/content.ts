@@ -28,7 +28,7 @@ export const skills = {
   "Data Engineering & Visualization": ["Apache Spark", "Apache Airflow", "Hadoop", "Tableau", "Power BI", "Jupyter", "QGIS", "SPSS"],
 };
 
-export type ProjectCategory = "AI/ML" | "Data Science" | "Systems";
+export type ProjectCategory = "AI/ML" | "Data Science" | "Infrastructure";
 
 export type Project = {
   id: number;
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     name: "AI-Powered YouTube Q&A Assistant",
     description:
       "Fully local RAG pipeline for YouTube Q&A using FastAPI, LangChain, and Ollama (llama3 + nomic-embed-text) — indexing transcripts in under 2s and answering in 8–12s. Session-scoped semantic search with FAISS retrieval and per-video chat memory, plus a pytest suite (13 tests, 71% coverage) with mocked LLM calls for CI reliability.",
-    categories: ["AI/ML", "Systems"],
+    categories: ["AI/ML", "Infrastructure"],
     tags: ["FastAPI", "LangChain", "Ollama", "FAISS", "RAG"],
     code: "https://github.com/soorajmanoj/youtube-ai-assistant",
     demo: "https://github.com/soorajmanoj/youtube-ai-assistant",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     name: "Dockerized MLOps API with FastAPI",
     description:
       "Containerized a TF-IDF + Logistic Regression sentiment classifier behind a FastAPI service with Pydantic-validated schemas and auto-generated OpenAPI docs. CI via GitHub Actions runs the pytest suite and validates the Docker build on every push/PR.",
-    categories: ["AI/ML", "Systems"],
+    categories: ["AI/ML", "Infrastructure"],
     tags: ["FastAPI", "Docker", "scikit-learn", "GitHub Actions"],
     code: "https://github.com/soorajmanoj/dockerized-mlops-api-fastapi",
     demo: "https://github.com/soorajmanoj/dockerized-mlops-api-fastapi",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     name: "Kafka-Based Credit Card Transaction Processing System",
     description:
       "Real-time + batch transaction pipeline on a Kafka-based Lambda Architecture, streaming 400+ transactions through fraud checks (geolocation mismatch, credit-utilization limits) before batch-layer reconciliation. Stream-layer validation flags 2.5% of transactions for anomalies, then pushes finalized balances/scores back to MySQL.",
-    categories: ["Systems", "Data Science"],
+    categories: ["Infrastructure", "Data Science"],
     tags: ["Python", "Kafka", "MySQL", "Lambda Architecture"],
     code: "https://github.com/soorajmanoj/credit-card-kafka-pipeline",
     demo: "https://github.com/soorajmanoj/credit-card-kafka-pipeline",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     name: "Healthcare Data Normalization with PySpark",
     description:
       "Spark ETL pipeline normalizing flat legacy healthcare visit data into a 10-dimension + 1-fact snowflake schema, with automated referential integrity checks across all foreign keys and Tableau dashboards for insight generation.",
-    categories: ["Data Science", "Systems"],
+    categories: ["Data Science", "Infrastructure"],
     tags: ["PySpark", "MongoDB", "Tableau"],
     code: "https://github.com/soorajmanoj/pyspark-etl-healthcare-normalization-pipeline",
     demo: "https://github.com/soorajmanoj/pyspark-etl-healthcare-normalization-pipeline",

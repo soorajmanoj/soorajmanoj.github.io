@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { projects, type Project } from "../data/content";
 
-const categories = ["All", "AI/ML", "Data Science", "Systems"] as const;
+const categories = ["All", "AI/ML", "Data Science", "Infrastructure"] as const;
 
 export default function Projects() {
   const [active, setActive] = useState<(typeof categories)[number]>("All");
@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Projects</h2>
         <p className="mt-4 max-w-xl text-zinc-600 dark:text-zinc-400">
-          A filterable gallery across AI/ML, data, and systems work.
+          A filterable gallery across AI/ML, data, and infrastructure work.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-2">
