@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { projects, type Project } from "../data/content";
+import Reveal from "./Reveal";
 
 const categories = ["All", "AI/ML", "Data Science", "Infrastructure"] as const;
 
@@ -14,12 +15,14 @@ export default function Projects() {
   return (
     <section id="projects" className="border-t border-card-border py-24">
       <div className="mx-auto max-w-5xl px-6">
-        <h2 className="font-serif text-4xl font-medium italic tracking-tight sm:text-5xl">
-          Projects
-        </h2>
-        <p className="mt-4 max-w-xl text-muted">
-          A filterable gallery across AI/ML, data, and infrastructure work.
-        </p>
+        <Reveal>
+          <h2 className="font-serif text-4xl font-medium italic tracking-tight sm:text-5xl">
+            Projects
+          </h2>
+          <p className="mt-4 max-w-xl text-muted">
+            A filterable gallery across AI/ML, data, and infrastructure work.
+          </p>
+        </Reveal>
 
         <div className="mt-8 flex flex-wrap gap-2">
           {categories.map((cat) => (
@@ -38,43 +41,42 @@ export default function Projects() {
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {filtered.map((project) => (
-            <article
-              key={project.id}
-              className="flex flex-col gap-3 rounded-2xl border border-card-border p-6 transition-shadow hover:shadow-md hover:shadow-accent/5"
-            >
-              <h3 className="font-semibold">{project.name}</h3>
-              <p className="text-sm text-muted">{project.description}</p>
-              <div className="mt-auto flex flex-wrap gap-2 pt-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-accent/10 px-2.5 py-1 text-xs text-accent"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              {(project.code || project.demo || project.paper) && (
-                <div className="flex gap-4 pt-2 text-sm font-medium">
-                  {project.code && (
-                    <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                      Code
-                    </a>
-                  )}
-                  {project.demo && project.demo !== project.code && (
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                      Demo
-                    </a>
-                  )}
-                  {project.paper && (
-                    <a href={project.paper} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                      Paper
-                    </a>
-                  )}
+          {filtered.map((project, i) => (
+            <Reveal key={project.id} delay={(i % 4) * 75}>
+              <article className="flex h-full flex-col gap-3 rounded-2xl border border-card-border p-6 transition-shadow hover:shadow-md hover:shadow-accent/5">
+                <h3 className="font-semibold">{project.name}</h3>
+                <p className="text-sm text-muted">{project.description}</p>
+                <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full bg-accent/10 px-2.5 py-1 text-xs text-accent"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-              )}
-            </article>
+                {(project.code || project.demo || project.paper) && (
+                  <div className="flex gap-4 pt-2 text-sm font-medium">
+                    {project.code && (
+                      <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
+                        Code
+                      </a>
+                    )}
+                    {project.demo && project.demo !== project.code && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
+                        Demo
+                      </a>
+                    )}
+                    {project.paper && (
+                      <a href={project.paper} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
+                        Paper
+                      </a>
+                    )}
+                  </div>
+                )}
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

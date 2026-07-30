@@ -1,9 +1,11 @@
 import { profile } from "../data/content";
+import Reveal from "./Reveal";
 
 export default function Contact() {
   return (
     <section id="contact" className="border-t border-card-border py-24">
       <div className="mx-auto max-w-5xl px-6">
+        <Reveal>
         <h2 className="font-serif text-4xl font-medium italic tracking-tight sm:text-5xl">
           Get in touch
         </h2>
@@ -67,6 +69,7 @@ export default function Contact() {
             </svg>
           </a>
         </div>
+        </Reveal>
       </div>
     </section>
   );
