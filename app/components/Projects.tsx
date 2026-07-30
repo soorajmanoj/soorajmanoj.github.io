@@ -54,7 +54,7 @@ export default function Projects() {
         {/* Projects subsection */}
         <div className="mt-16">
           <Reveal>
-            <h3 className="font-serif text-2xl font-medium italic tracking-tight">Projects</h3>
+            <h3 className="font-serif text-2xl font-medium italic tracking-tight">Self Projects</h3>
             <p className="mt-3 max-w-xl text-muted">
               A filterable gallery across AI/ML, data, and infrastructure work.
             </p>
@@ -96,17 +96,17 @@ export default function Projects() {
                     <div className="flex gap-4 pt-2 text-sm font-medium">
                       {project.code && (
                         <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                          Code
+                          Code →
                         </a>
                       )}
                       {project.demo && project.demo !== project.code && (
                         <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                          Demo
+                          Demo →
                         </a>
                       )}
                       {project.paper && (
                         <a href={project.paper} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                          Paper
+                          Paper →
                         </a>
                       )}
                     </div>
