@@ -44,17 +44,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 1,
-    name: "Bias in AI Travel Narratives: Indic vs. Western LLMs",
-    description:
-      "Investigated representational bias in AI-generated travel narratives via a modular 5-layer pipeline ingesting and normalizing 600,000 user comments. Built an automated relevance classifier with the Gemini API and orchestrated a fault-tolerant batch generation workflow across 4 LLMs (LLaMA 3.2, Gemma 2, GPT-2, Sarvam) to produce counterspeech addressing culturally biased narratives.",
-    categories: ["AI/ML", "Data Science"],
-    tags: ["Python", "NLP", "Gemini API", "LLMs"],
-    code: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
-    demo: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
-    date: "May 2026",
-  },
-  {
     id: 2,
     name: "AI-Powered YouTube Q&A Assistant",
     description:
@@ -105,15 +94,6 @@ export const projects: Project[] = [
     tags: ["Python", "Recommendation Systems"],
     code: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
     demo: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
-  },
-  {
-    id: 7,
-    name: "Analyzing Social Media Responses Across Various Languages Based On RG Kar Incident",
-    description:
-      "Multilingual sentiment analysis and topic modeling of YouTube comments (5 languages) on the RG Kar Hospital incident, using VADER and LDA to uncover recurring themes in public discourse.",
-    categories: ["AI/ML", "Data Science"],
-    tags: ["Python", "VADER", "LDA", "NLP"],
-    paper: "/assets/research/rg-kar-social-media-analysis.pdf",
   },
 ];
 
