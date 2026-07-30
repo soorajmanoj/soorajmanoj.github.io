@@ -28,11 +28,13 @@ export const skills = {
   "Data Engineering & Visualization": ["Apache Spark", "Apache Airflow", "Hadoop", "Tableau", "Power BI", "Jupyter", "QGIS", "SPSS"],
 };
 
+export type ProjectCategory = "AI/ML" | "Data Science" | "Systems";
+
 export type Project = {
   id: number;
   name: string;
   description: string;
-  category: "AI/ML" | "Data Science" | "Systems";
+  categories: ProjectCategory[];
   tags: string[];
   code?: string;
   demo?: string;
@@ -46,7 +48,7 @@ export const projects: Project[] = [
     name: "Bias in AI Travel Narratives: Indic vs. Western LLMs",
     description:
       "Investigated representational bias in AI-generated travel narratives via a modular 5-layer pipeline ingesting and normalizing 600,000 user comments. Built an automated relevance classifier with the Gemini API and orchestrated a fault-tolerant batch generation workflow across 4 LLMs (LLaMA 3.2, Gemma 2, GPT-2, Sarvam) to produce counterspeech addressing culturally biased narratives.",
-    category: "AI/ML",
+    categories: ["AI/ML", "Data Science"],
     tags: ["Python", "NLP", "Gemini API", "LLMs"],
     code: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
     demo: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
@@ -57,7 +59,7 @@ export const projects: Project[] = [
     name: "AI-Powered YouTube Q&A Assistant",
     description:
       "Fully local RAG pipeline for YouTube Q&A using FastAPI, LangChain, and Ollama (llama3 + nomic-embed-text) — indexing transcripts in under 2s and answering in 8–12s. Session-scoped semantic search with FAISS retrieval and per-video chat memory, plus a pytest suite (13 tests, 71% coverage) with mocked LLM calls for CI reliability.",
-    category: "AI/ML",
+    categories: ["AI/ML", "Systems"],
     tags: ["FastAPI", "LangChain", "Ollama", "FAISS", "RAG"],
     code: "https://github.com/soorajmanoj/youtube-ai-assistant",
     demo: "https://github.com/soorajmanoj/youtube-ai-assistant",
@@ -68,7 +70,7 @@ export const projects: Project[] = [
     name: "Dockerized MLOps API with FastAPI",
     description:
       "Containerized a TF-IDF + Logistic Regression sentiment classifier behind a FastAPI service with Pydantic-validated schemas and auto-generated OpenAPI docs. CI via GitHub Actions runs the pytest suite and validates the Docker build on every push/PR.",
-    category: "Systems",
+    categories: ["AI/ML", "Systems"],
     tags: ["FastAPI", "Docker", "scikit-learn", "GitHub Actions"],
     code: "https://github.com/soorajmanoj/dockerized-mlops-api-fastapi",
     demo: "https://github.com/soorajmanoj/dockerized-mlops-api-fastapi",
@@ -79,7 +81,7 @@ export const projects: Project[] = [
     name: "Kafka-Based Credit Card Transaction Processing System",
     description:
       "Real-time + batch transaction pipeline on a Kafka-based Lambda Architecture, streaming 400+ transactions through fraud checks (geolocation mismatch, credit-utilization limits) before batch-layer reconciliation. Stream-layer validation flags 2.5% of transactions for anomalies, then pushes finalized balances/scores back to MySQL.",
-    category: "Systems",
+    categories: ["Systems", "Data Science"],
     tags: ["Python", "Kafka", "MySQL", "Lambda Architecture"],
     code: "https://github.com/soorajmanoj/credit-card-kafka-pipeline",
     demo: "https://github.com/soorajmanoj/credit-card-kafka-pipeline",
@@ -90,7 +92,7 @@ export const projects: Project[] = [
     name: "Healthcare Data Normalization with PySpark",
     description:
       "Spark ETL pipeline normalizing flat legacy healthcare visit data into a 10-dimension + 1-fact snowflake schema, with automated referential integrity checks across all foreign keys and Tableau dashboards for insight generation.",
-    category: "Data Science",
+    categories: ["Data Science", "Systems"],
     tags: ["PySpark", "MongoDB", "Tableau"],
     code: "https://github.com/soorajmanoj/pyspark-etl-healthcare-normalization-pipeline",
     demo: "https://github.com/soorajmanoj/pyspark-etl-healthcare-normalization-pipeline",
@@ -99,7 +101,7 @@ export const projects: Project[] = [
     id: 6,
     name: "YouTube Content Creator Recommendation System",
     description: "A recommendation system for YouTube content creators.",
-    category: "Data Science",
+    categories: ["Data Science", "AI/ML"],
     tags: ["Python", "Recommendation Systems"],
     code: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
     demo: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
@@ -109,7 +111,7 @@ export const projects: Project[] = [
     name: "Analyzing Social Media Responses Across Various Languages Based On RG Kar Incident",
     description:
       "Multilingual sentiment analysis and topic modeling of YouTube comments (5 languages) on the RG Kar Hospital incident, using VADER and LDA to uncover recurring themes in public discourse.",
-    category: "AI/ML",
+    categories: ["AI/ML", "Data Science"],
     tags: ["Python", "VADER", "LDA", "NLP"],
     paper: "/assets/research/rg-kar-social-media-analysis.pdf",
   },

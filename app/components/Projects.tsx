@@ -9,7 +9,7 @@ export default function Projects() {
   const [active, setActive] = useState<(typeof categories)[number]>("All");
 
   const filtered: Project[] =
-    active === "All" ? projects : projects.filter((p) => p.category === active);
+    active === "All" ? projects : projects.filter((p) => p.categories.includes(active));
 
   return (
     <section id="projects" className="border-t border-black/10 py-24 dark:border-white/10">
