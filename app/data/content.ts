@@ -32,10 +32,11 @@ export type Project = {
   id: number;
   name: string;
   description: string;
-  category: "AI Research" | "Data Science" | "Systems" | "Full-Stack";
+  category: "AI/ML" | "Data Science" | "Systems";
   tags: string[];
   code?: string;
   demo?: string;
+  paper?: string;
   date?: string;
 };
 
@@ -45,7 +46,7 @@ export const projects: Project[] = [
     name: "Bias in AI Travel Narratives: Indic vs. Western LLMs",
     description:
       "Investigated representational bias in AI-generated travel narratives via a modular 5-layer pipeline ingesting and normalizing 600,000 user comments. Built an automated relevance classifier with the Gemini API and orchestrated a fault-tolerant batch generation workflow across 4 LLMs (LLaMA 3.2, Gemma 2, GPT-2, Sarvam) to produce counterspeech addressing culturally biased narratives.",
-    category: "AI Research",
+    category: "AI/ML",
     tags: ["Python", "NLP", "Gemini API", "LLMs"],
     code: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
     demo: "https://github.com/soorajmanoj/Bias-in-AI-Generated-Travel-Narratives",
@@ -56,7 +57,7 @@ export const projects: Project[] = [
     name: "AI-Powered YouTube Q&A Assistant",
     description:
       "Fully local RAG pipeline for YouTube Q&A using FastAPI, LangChain, and Ollama (llama3 + nomic-embed-text) — indexing transcripts in under 2s and answering in 8–12s. Session-scoped semantic search with FAISS retrieval and per-video chat memory, plus a pytest suite (13 tests, 71% coverage) with mocked LLM calls for CI reliability.",
-    category: "AI Research",
+    category: "AI/ML",
     tags: ["FastAPI", "LangChain", "Ollama", "FAISS", "RAG"],
     code: "https://github.com/soorajmanoj/youtube-ai-assistant",
     demo: "https://github.com/soorajmanoj/youtube-ai-assistant",
@@ -102,6 +103,15 @@ export const projects: Project[] = [
     tags: ["Python", "Recommendation Systems"],
     code: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
     demo: "https://github.com/soorajmanoj/youtube-content-creator-recommendation",
+  },
+  {
+    id: 7,
+    name: "Analyzing Social Media Responses Across Various Languages Based On RG Kar Incident",
+    description:
+      "Multilingual sentiment analysis and topic modeling of YouTube comments (5 languages) on the RG Kar Hospital incident, using VADER and LDA to uncover recurring themes in public discourse.",
+    category: "AI/ML",
+    tags: ["Python", "VADER", "LDA", "NLP"],
+    paper: "/assets/research/rg-kar-social-media-analysis.pdf",
   },
 ];
 
