@@ -2,29 +2,29 @@ import { research } from "../data/content";
 
 export default function Research() {
   return (
-    <section id="research" className="border-t border-black/10 py-24 dark:border-white/10">
+    <section id="research" className="border-t border-card-border py-24">
       <div className="mx-auto max-w-5xl px-6">
-        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Research</h2>
+        <h2 className="font-serif text-4xl font-medium italic tracking-tight sm:text-5xl">
+          Research
+        </h2>
 
-        <div className="mt-10 space-y-10">
+        <div className="mt-10 space-y-6">
           {research.map((paper) => (
             <article
               key={paper.id}
-              className="rounded-2xl border border-black/10 p-6 dark:border-white/10"
+              className="rounded-2xl border border-card-border p-6 transition-shadow hover:shadow-md hover:shadow-accent/5"
             >
               <h3 className="text-xl font-semibold">{paper.title}</h3>
-              <p className="mt-2 text-sm text-zinc-500">
-                {paper.authors.join(", ")}
-              </p>
-              <p className="text-sm text-zinc-500">
+              <p className="mt-2 text-sm text-muted">{paper.authors.join(", ")}</p>
+              <p className="text-sm text-muted">
                 {paper.venue} · {paper.date}
               </p>
-              <p className="mt-4 text-zinc-600 dark:text-zinc-400">{paper.abstract}</p>
+              <p className="mt-4 text-muted">{paper.abstract}</p>
               <a
                 href={paper.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block text-sm font-medium underline underline-offset-4"
+                className="mt-4 inline-block text-sm font-medium text-accent hover:underline underline-offset-4"
               >
                 Read paper →
               </a>

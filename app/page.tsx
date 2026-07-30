@@ -20,7 +20,7 @@ export default function Home() {
         <Experience />
         <Contact />
       </main>
-      <footer className="border-t border-black/10 py-8 text-center text-xs text-zinc-500 dark:border-white/10">
+      <footer className="border-t border-card-border py-8 text-center text-xs text-muted">
         Built with Next.js + Tailwind CSS.
       </footer>
     </>
